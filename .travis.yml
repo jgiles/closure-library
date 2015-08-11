@@ -9,7 +9,7 @@ install:
   - ./scripts/ci/install_closure_deps.sh
 
 script:
-  - java -jar ../closure-compiler/build/compiler.jar -O ADVANCED --warning_level VERBOSE --jscomp_error='*' --jscomp_off=inferredConstCheck --jscomp_off=extraRequire --jscomp_off=unnecessaryCasts --jscomp_off=deprecated --js='**.js' --js='!**_test.js' --js='!**_perf.js' --js='!**tester.js' --js='!**promise/testsuiteadapter.js' --js='!**osapi/osapi.js' --js='!**svgpan/svgpan.js' --js_output_file=$(mktemp)
+  - java -jar ../closure-compiler/build/compiler.jar -O ADVANCED --jscomp_error=ambiguousFunctionDecl --jscomp_error=checkRegExp --jscomp_error=checkTypes --jscomp_error=conformanceViolations --jscomp_error=checkVars --jscomp_error=const --jscomp_error=es3 --jscomp_error=es5Strict --jscomp_error=globalThis --jscomp_error=misplacedTypeAnnotation --jscomp_error=missingProperties --jscomp_error=missingProvide --jscomp_error=missingRequire --jscomp_error=missingReturn --jscomp_error=suspiciousCode --jscomp_error=undefinedNames --jscomp_error=undefinedVars --jscomp_error=useOfGoogBase --jscomp_error=uselessCode --jscomp_error=visibility --js='**.js' --js='!**_test.js' --js='!**_perf.js' --js='!**tester.js' --js='!**promise/testsuiteadapter.js' --js='!**osapi/osapi.js' --js='!**svgpan/svgpan.js' --js_output_file=$(mktemp)
 
   - ./scripts/ci/lint_pull_request.sh
 
