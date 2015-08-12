@@ -1,0 +1,2956 @@
+{
+  "!name": "../clean-closure-libarary/alltests.js",
+  "!define": {
+    "!proto": {
+      "origList_": {
+        "!type": "fn()",
+        "!span": "5875[214:32]-5884[214:41]"
+      },
+      "target": {
+        "!type": "+Element",
+        "!span": "4440[139:26]-4446[139:32]"
+      },
+      "limits": {
+        "!span": "4680[153:26]-4686[153:32]"
+      },
+      "rightToLeft_": {
+        "!type": "bool",
+        "!span": "4843[161:26]-4855[161:38]",
+        "!doc": "Whether the component is rendered right-to-left.  Right-to-left is set\nlazily when {@link #isRightToLeft} is called the first time, unless it has\nbeen set by calling {@link #setRightToLeft} explicitly."
+      },
+      "pageScroll": {
+        "!span": "6255[228:26]-6265[228:36]"
+      },
+      "document_": {
+        "!type": "+Document",
+        "!span": "6994[269:26]-7003[269:35]",
+        "!doc": "* Document containing the triggering elements, to which we listen for mouseover events."
+      },
+      "play": {
+        "!type": "fn(opt_restart: bool) -> bool",
+        "!span": "1829[68:29]-1833[68:33]",
+        "!doc": "* Plays the animation."
+      },
+      "stop": {
+        "!type": "fn(opt_gotoEnd: bool)",
+        "!span": "1899[74:29]-1903[74:33]",
+        "!doc": "* Stops the animation."
+      },
+      "getTrogClassId": {
+        "!type": "fn() -> string",
+        "!span": "6302[223:29]-6316[223:43]",
+        "!doc": "* @override"
+      },
+      "handleKeyDown": {
+        "!type": "fn(e: !proto.handleKeyDown.!0) -> bool",
+        "!span": "8062[279:29]-8075[279:42]",
+        "!doc": "* In case the keyboard navigation is enabled, this will set focus on the first tabbable element in the bubble when TAB is clicked."
+      },
+      "handleKeyPress": {
+        "!type": "fn(e: !proto.handleKeyPress.!0) -> bool",
+        "!span": "8443[289:29]-8457[289:43]",
+        "!doc": "* @override"
+      },
+      "handleKeyUp": {
+        "!type": "fn(e: !proto.handleKeyUp.!0) -> bool",
+        "!span": "8687[298:29]-8698[298:40]",
+        "!doc": "* Handles the key up event."
+      },
+      "handleSelectionChange": {
+        "!type": "fn(opt_e: !proto.handleSelectionChange.!0, opt_target: +Node) -> bool",
+        "!span": "9009[308:29]-9030[308:50]",
+        "!doc": "* Handles {@link goog.events.EventType.SELECT} events raised by the selection model when the selection changes."
+      },
+      "handleKeyboardShortcut": {
+        "!type": "fn(e: !proto.handleKeyboardShortcut.!0, key: string, isModifierPressed: bool) -> bool",
+        "!span": "10311[332:29]-10333[332:51]",
+        "!doc": "* @override"
+      },
+      "queryCommandValue": {
+        "!type": "fn(command: string)",
+        "!span": "13320[409:29]-13337[409:46]",
+        "!doc": "* Gets the value of command(s)."
+      },
+      "prepareContentsHtml": {
+        "!type": "fn(originalHtml: string, styles: ?) -> string",
+        "!span": "13882[425:29]-13901[425:48]",
+        "!doc": "* If the contents are empty, return the 'default' html for the field."
+      },
+      "cleanContentsDom": {
+        "!type": "fn(fieldCopy: +Element)",
+        "!span": "14384[439:29]-14400[439:45]",
+        "!doc": "* @override"
+      },
+      "cleanContentsHtml": {
+        "!type": "fn(originalHtml: string) -> string",
+        "!span": "14766[452:29]-14783[452:46]",
+        "!doc": "* @override"
+      },
+      "getValue": {
+        "!type": "fn(element: +Element) -> string",
+        "!span": "13632[493:35]-13640[493:43]",
+        "!doc": "* @return {*} The value of this Result."
+      },
+      "getNewValue": {
+        "!type": "fn() -> bool",
+        "!span": "13744[500:35]-13755[500:46]",
+        "!doc": "* Returns the value of the setting to use once \"Apply Tweaks\" is clicked."
+      },
+      "setValue": {
+        "!type": "fn(element: +Element, value: string)",
+        "!span": "13860[507:35]-13868[507:43]",
+        "!doc": "* Sets the value of this Result, changing the state."
+      },
+      "setDefaultValue": {
+        "!type": "fn(value: ?)",
+        "!span": "13972[514:35]-13987[514:50]",
+        "!doc": "* Sets the default value of the prompt when it is displayed."
+      },
+      "getDefaultValue": {
+        "!type": "fn() -> bool",
+        "!span": "14086[521:35]-14101[521:50]",
+        "!doc": "* Returns the default value for this setting."
+      },
+      "message": {
+        "!type": "string",
+        "!span": "2314[77:53]-2321[77:60]"
+      },
+      "backgroundElement_": {
+        "!type": "fn()",
+        "!span": "6364[193:35]-6382[193:53]"
+      },
+      "contentElement_": {
+        "!type": "fn()",
+        "!span": "6506[201:35]-6521[201:50]"
+      },
+      "createDom": {
+        "!type": "fn()",
+        "!span": "2902[81:12]-2911[82:4]",
+        "!doc": "* @override"
+      },
+      "inputHandler_": {
+        "!type": "fn()",
+        "!span": "3621[146:31]-3634[147:11]",
+        "!doc": "Listen to value change events"
+      },
+      "elButtonBar_": {
+        "!type": "fn()",
+        "!span": "3412[110:26]-3424[110:38]"
+      },
+      "selected_": {
+        "!type": "bool",
+        "!span": "3644[126:26]-3653[126:35]",
+        "!doc": "* Whether the tree item is selected."
+      },
+      "openingCoords": {
+        "!span": "4393[124:23]-4406[124:36]"
+      },
+      "eventHandler_": {
+        "!span": "3423[122:18]-3436[122:31]",
+        "!doc": "Event handler for listening to events without leaking."
+      },
+      "keyHandler_": {
+        "!span": "6882[176:11]-6893[177:4]",
+        "!doc": "The object handling keyboard events."
+      },
+      "getChild": {
+        "!type": "fn(id: string) -> !proto.getChild.!ret",
+        "!span": "26237[859:28]-26245[859:36]",
+        "!doc": "* Returns the child with the given ID, or null if no such child exists."
+      },
+      "getChildAt": {
+        "!type": "fn(index: number) -> !proto.getChildAt.!ret",
+        "!span": "26527[869:28]-26537[869:38]"
+      },
+      "value_": {
+        "!type": "number",
+        "!span": "2480[72:25]-2486[72:31]",
+        "!doc": "The current value that needs to be displayed in the gauge."
+      },
+      "enabled_": {
+        "!type": "bool",
+        "!span": "2861[93:27]-2869[93:35]",
+        "!doc": "* Whether the container is enabled and reacting to keyboard and mouse events."
+      },
+      "excludeTags": {
+        "!type": "[string]",
+        "!span": "4245[152:39]-4256[152:50]"
+      },
+      "encrypt": {
+        "!type": "fn(input: [number]) -> [number]",
+        "!span": "1363[41:33]-1370[41:40]",
+        "!doc": "* Encrypt a message."
+      },
+      "decrypt": {
+        "!type": "fn(input: [number]) -> [number]",
+        "!span": "1696[51:33]-1703[51:40]",
+        "!doc": "* Decrypt a message."
+      },
+      "starts_": {
+        "!type": "[?]",
+        "!span": "1936[85:31]-1943[85:38]"
+      },
+      "handle": "+Element",
+      "element_": "+Element",
+      "currentAnchor_": "+Element"
+    },
+    "!proto.handleKeyDown.!0": {},
+    "!proto.handleKeyPress.!0": {},
+    "!proto.handleKeyUp.!0": {},
+    "!proto.handleSelectionChange.!0": {},
+    "!proto.handleKeyboardShortcut.!0": {},
+    "!proto.getChild.!ret": {},
+    "!proto.getChildAt.!ret": {},
+    "!proto.encrypt.!0": "[number]",
+    "!proto.encrypt.!ret": "[number]",
+    "!proto.decrypt.!0": "[number]",
+    "!proto.decrypt.!ret": "[number]",
+    "requestAnimationFrame.!0": {
+      "!type": "fn()",
+      "!span": "5952[214:36]-7264[254:1]",
+      "!doc": "* Run scheduled tasks."
+    },
+    "TestEvent.prototype": {},
+    "TestEvent.prototype.!proto": {
+      "propagationStopped_": {
+        "!type": "bool",
+        "!span": "2591[83:7]-2610[83:26]"
+      },
+      "defaultPrevented": {
+        "!type": "bool",
+        "!span": "2920[93:7]-2936[93:23]"
+      },
+      "returnValue_": {
+        "!type": "bool",
+        "!span": "3203[102:7]-3215[102:19]"
+      },
+      "target": "type.target"
+    },
+    "TestEvent.base": {
+      "!type": "fn(me: ?, methodName: ?, var_args: ?)",
+      "!span": "52145[1595:12]-52149[1595:16]"
+    },
+    "SanitizedContentSubclass.prototype": {},
+    "SanitizedContentSubclass.prototype.!proto": {
+      "content": {
+        "!type": "string",
+        "!span": "4591[137:41]-4598[137:48]"
+      },
+      "contentDir": "SanitizedContentSubclass.superClass_.contentDir",
+      "toString": "SanitizedContentSubclass.superClass_.toString",
+      "toSafeHtml": "SanitizedContentSubclass.superClass_.toSafeHtml",
+      "contentKind": "SanitizedContentSubclass.superClass_.contentKind"
+    },
+    "SanitizedContentSubclass.superClass_": {
+      "contentDir": {
+        "!span": "4474[130:41]-4484[130:51]",
+        "!doc": "The content's direction; null if unknown and thus to be estimated when\nnecessary."
+      },
+      "toString": {
+        "!type": "fn() -> !this.content",
+        "!span": "4660[141:41]-4668[141:49]",
+        "!doc": "* @override"
+      },
+      "toSafeHtml": {
+        "!type": "fn()",
+        "!span": "5009[152:41]-5019[152:51]",
+        "!doc": "* Converts sanitized content of kind TEXT or HTML into SafeHtml."
+      },
+      "contentKind": {
+        "!span": "4291[122:41]-4302[122:52]"
+      },
+      "content": {
+        "!type": "string",
+        "!span": "4591[137:41]-4598[137:48]"
+      },
+      "!span": "51325[1573:12]-51336[1573:23]"
+    },
+    "SanitizedContentSubclass.base": {
+      "!type": "fn(me: ?, methodName: ?, var_args: ?)",
+      "!span": "52145[1595:12]-52149[1595:16]"
+    },
+    "makeSanitizedContent.!ret": "+SanitizedContentSubclass",
+    "createRegistryEntries.!1": {},
+    "TO_STRING_EQUALITY_PREDICATE.!0": {
+      "ignoreCase_": {
+        "!type": "bool",
+        "!span": "2545[69:9]-2556[69:20]"
+      },
+      "scheme_": {
+        "!type": "string",
+        "!span": "9899[364:7]-9906[364:14]"
+      },
+      "userInfo_": {
+        "!type": "string",
+        "!span": "10743[399:7]-10752[399:16]"
+      },
+      "domain_": {
+        "!type": "string",
+        "!span": "11428[429:7]-11435[429:14]"
+      },
+      "path_": {
+        "!type": "string",
+        "!span": "12781[496:7]-12786[496:12]"
+      },
+      "fragment_": {
+        "!type": "string",
+        "!span": "17859[677:7]-17868[677:16]"
+      },
+      "isReadOnly_": {
+        "!type": "bool",
+        "!span": "19466[737:7]-19477[737:18]"
+      }
+    },
+    "fail.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "argumentsIncludeComments.!1": "[?]",
+    "assert.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertThrows.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotThrows.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertTrue.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertFalse.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNull.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotNull.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertUndefined.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotUndefined.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotNullNorUndefined.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNonEmptyString.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNaN.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotNaN.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertObjectEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertObjectRoughlyEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertObjectNotEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertArrayEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertArrayEquals.!1": "[?]",
+    "assertArrayEquals.!2": "[?]",
+    "assertElementsEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertElementsRoughlyEqual.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertSameElements.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertSameElements.!2": {},
+    "assertEvaluatesToTrue.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertEvaluatesToFalse.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertHTMLEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertHashEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertRoughlyEquals.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertContains.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertNotContains.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "assertRegExp.<i>": {
+      "!type": "number",
+      "!span": "6738[192:48]-6740[192:50]"
+    },
+    "tearDown.matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "tearDown.timer_": {
+      "!type": "number",
+      "!span": "4528[130:4]-4534[132:0]"
+    },
+    "tearDown.shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "tearDown.id_": {
+      "!type": "number",
+      "!span": "6535[205:6]-6538[205:9]"
+    },
+    "tearDown.isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "tearDown.sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "tearDown.waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "tearDown.isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "tearDown.position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "tearDown.timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "tearDown.waiting": {
+      "!type": "bool",
+      "!span": "12360[391:7]-12367[391:14]"
+    },
+    "tearDown.ref": {
+      "!type": "fn()",
+      "!span": "12788[405:7]-12791[405:10]"
+    },
+    "tearDown.metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "tearDown.disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "tearDown.innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "tearDown.type": {
+      "propagationStopped_": "bool",
+      "defaultPrevented": "bool",
+      "returnValue_": "bool",
+      "target": "type.target"
+    },
+    "tearDown.commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "tearDown.nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    },
+    "tigerData.<i>": {
+      "s": {
+        "!type": "string",
+        "!span": "146458[2839:10]-146459[2839:11]"
+      },
+      "p": {
+        "!type": "[tigerData.<i>.p.<i>]",
+        "!span": "146469[2839:21]-146470[2839:22]"
+      },
+      "!span": "146448[2839:0]-146558[2840:56]"
+    },
+    "tigerData.<i>.p.<i>": {
+      "t": {
+        "!type": "string",
+        "!span": "146504[2840:2]-146505[2840:3]"
+      },
+      "p": {
+        "!type": "[number]",
+        "!span": "146512[2840:10]-146513[2840:11]"
+      },
+      "!span": "146503[2840:1]-146556[2840:54]"
+    },
+    "ChannelRequest.Error": "fn()",
+    "WebChannelBase.Handler": "fn()",
+    "WebChannelBase.Error": "fn()",
+    "WebChannelBase.State": "fn()",
+    "allOf.!0": {},
+    "allOf.!ret": {},
+    "anyOf.!0": {},
+    "anyOf.!ret": {},
+    "isNot.!0": {},
+    "isNot.!ret": {},
+    "greaterThan.!ret": {},
+    "greaterThanEqualTo.!ret": {},
+    "lessThan.!ret": {},
+    "lessThanEqualTo.!ret": {},
+    "equalTo.!ret": {},
+    "closeTo.!ret": {},
+    "hasEntries.!ret": {},
+    "hasEntry.!ret": {},
+    "hasKey.!ret": {},
+    "hasValue.!ret": {},
+    "equalsObject.!ret": {},
+    "hasProperty.!ret": {},
+    "instanceOfClass.!ret": {},
+    "isNull.!ret": {},
+    "isNullOrUndefined.!ret": {},
+    "isUndefined.!ret": {},
+    "anything.!ret": {},
+    "is.!0": {},
+    "is.!ret": {},
+    "describedAs.!1": {
+      "describe": {
+        "!type": "fn(value: ?) -> string",
+        "!span": "2265[90:10]-2273[90:18]"
+      }
+    },
+    "describedAs.!ret": {},
+    "containsString.!ret": {},
+    "endsWith.!ret": {},
+    "equalToIgnoringWhitespace.!ret": {},
+    "equals.!ret": {},
+    "matchesRegex.!ret": {},
+    "startsWith.!ret": {},
+    "stringContainsInOrder.!0": "[string]",
+    "stringContainsInOrder.!ret": {},
+    "setUpPage.matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "setUpPage.timer_": {
+      "!type": "number",
+      "!span": "4528[130:4]-4534[132:0]"
+    },
+    "setUpPage.shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "setUpPage.id_": {
+      "!type": "number",
+      "!span": "6535[205:6]-6538[205:9]"
+    },
+    "setUpPage.isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "setUpPage.sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "setUpPage.waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "setUpPage.isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "setUpPage.position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "setUpPage.timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "setUpPage.currentTarget": {
+      "!span": "12412[426:0]-12425[426:13]",
+      "sentConnectionSetup_": {
+        "!type": "bool",
+        "!span": "14788[520:16]-14808[520:36]"
+      },
+      "waitForAck_": {
+        "!type": "bool",
+        "!span": "14828[521:14]-14839[521:25]"
+      },
+      "isLoaded_": {
+        "!type": "bool",
+        "!span": "6356[201:5]-6365[201:14]"
+      },
+      "position_": {
+        "!type": "number",
+        "!span": "4234[121:24]-4243[122:8]"
+      },
+      "timeoutHandle_": {
+        "!type": "number",
+        "!span": "20729[637:2308]-20743[637:2322]"
+      },
+      "disposed_": {
+        "!type": "bool",
+        "!span": "5045[175:9]-5054[175:18]"
+      },
+      "cancelBubble": {
+        "!type": "bool",
+        "!span": "9761[334:16]-9773[334:28]"
+      },
+      "returnValue": {
+        "!type": "bool",
+        "!span": "10002[346:7]-10013[346:18]"
+      },
+      "keyCode": {
+        "!type": "number",
+        "!span": "10728[364:13]-10735[364:20]"
+      },
+      "metaKeyRecentlyReleased_": {
+        "!type": "bool",
+        "!span": "22358[637:3937]-22382[637:3961]"
+      },
+      "disableHover_": {
+        "!type": "bool",
+        "!span": "6716[218:20]-6729[218:33]"
+      },
+      "innerHTML": {
+        "!type": "string",
+        "!span": "14205[489:36]-14214[489:45]"
+      },
+      "stack": {
+        "!type": "string",
+        "!span": "11398[355:10]-11403[355:15]"
+      },
+      "commentStrip": {
+        "!type": "bool",
+        "!span": "47810[1351:14]-47822[1351:26]"
+      },
+      "nozip": {
+        "!type": "bool",
+        "!span": "47864[1353:14]-47869[1353:19]"
+      },
+      "$pendingExpectation": "$pendingExpectation",
+      "currentTarget": "currentTarget",
+      "type": "type",
+      "R": "R",
+      "TARGET": "TARGET",
+      "defaultScope_": "?",
+      "constructorStack_": "constructorStack_",
+      "SVGMatrix": "SVGMatrix",
+      "SVGPoint": "SVGPoint",
+      "ImageData": "ImageData"
+    },
+    "setUpPage.waiting": {
+      "!type": "bool",
+      "!span": "12360[391:7]-12367[391:14]"
+    },
+    "setUpPage.metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "setUpPage.disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "setUpPage.innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "setUpPage.commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "setUpPage.nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    },
+    "getBytes.!ret": "[number]",
+    "svgpan.SvgPan.superClass_": {
+      "disposed_": {
+        "!type": "bool",
+        "!span": "3775[127:26]-3784[127:35]",
+        "!doc": "* Whether the object has been disposed of."
+      },
+      "isDisposed": {
+        "!type": "fn() -> !this.disposed_",
+        "!span": "4247[150:26]-4257[150:36]",
+        "!doc": "* @return {boolean} Whether the object has been disposed of."
+      },
+      "getDisposed": {
+        "!type": "fn() -> bool",
+        "!span": "4447[159:26]-4458[159:37]",
+        "!doc": "* @return {boolean} Whether the object has been disposed of."
+      },
+      "dispose": {
+        "!type": "fn()",
+        "!span": "4876[171:26]-4883[171:33]",
+        "!doc": "* Disposes of the object."
+      },
+      "registerDisposable": {
+        "!type": "fn(disposable: svgpan.SvgPan.superClass_.registerDisposable.!0)",
+        "!span": "5845[198:26]-5863[198:44]",
+        "!doc": "* Associates a disposable object with this object so that they will be disposed together."
+      },
+      "addOnDisposeCallback": {
+        "!type": "fn(callback: ?, opt_scope?: +T)",
+        "!span": "6268[210:26]-6288[210:46]",
+        "!doc": "* Invokes a callback function when this object is disposed."
+      },
+      "disposeInternal": {
+        "!type": "fn()",
+        "!span": "7485[246:26]-7500[246:41]",
+        "!doc": "* @override"
+      },
+      "creationStack": {
+        "!type": "string",
+        "!span": "4121[143:26]-4134[143:39]"
+      },
+      "!span": "51325[1573:12]-51336[1573:23]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>": {
+      "!type": "fn(e: ?)",
+      "!span": "33034[977:13]-33068[977:47]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.waiting": {
+      "!type": "bool",
+      "!span": "12360[391:7]-12367[391:14]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.id_": {
+      "!type": "number",
+      "!span": "6535[205:6]-6538[205:9]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "svgpan.SvgPan.superClass_.dispose.<i>.innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "svgpan.SvgPan.superClass_.registerDisposable.!0": {},
+    "svgpan.SvgPan.superClass_.addOnDisposeCallback.!1": "+T",
+    "svgpan.SvgPan.prototype": {
+      "disposeInternal": {
+        "!type": "fn()",
+        "!span": "4321[137:24]-4336[137:39]",
+        "!doc": "* @override"
+      },
+      "setPanEnabled": {
+        "!type": "fn(enabled: bool)",
+        "!span": "4723[158:24]-4736[158:37]",
+        "!doc": "* Enables/disables panning the entire SVG (default = true)."
+      },
+      "setZoomEnabled": {
+        "!type": "fn(enabled: bool)",
+        "!span": "4949[167:24]-4963[167:38]",
+        "!doc": "* Enables/disables zooming (default = true)."
+      },
+      "setDragEnabled": {
+        "!type": "fn(enabled: bool)",
+        "!span": "5197[176:24]-5211[176:38]",
+        "!doc": "* Enables/disables dragging individual SVG objects (default = false)."
+      },
+      "setZoomScale": {
+        "!type": "fn(scale: number)",
+        "!span": "5409[185:24]-5421[185:36]",
+        "!doc": "* Sets the sensitivity of mousewheel zooming (default = 0.4)."
+      },
+      "setupHandlers_": {
+        "!type": "fn()",
+        "!span": "5553[194:24]-5567[194:38]",
+        "!doc": "* Registers mouse event handlers."
+      },
+      "getRoot_": {
+        "!type": "fn(svgDoc: +Document) -> !this.svgRoot_",
+        "!span": "6461[216:24]-6469[216:32]",
+        "!doc": "* Retrieves the root element for SVG manipulation."
+      },
+      "getEventPoint_": {
+        "!type": "fn(evt: ?)",
+        "!span": "7090[240:24]-7104[240:38]",
+        "!doc": "* Instantiates an SVGPoint object with given event coordinates."
+      },
+      "newPoint_": {
+        "!type": "fn(x: number, y: number)",
+        "!span": "7401[252:24]-7410[252:33]",
+        "!doc": "* Instantiates an SVGPoint object with given coordinates."
+      },
+      "setCtm_": {
+        "!type": "fn(element: +Element, matrix: ?)",
+        "!span": "7696[266:24]-7703[266:31]",
+        "!doc": "* Sets the current transform matrix of an element."
+      },
+      "handleMouseWheel_": {
+        "!type": "fn(evt: ?)",
+        "!span": "8027[278:24]-8044[278:41]",
+        "!doc": "* Handle mouse wheel event."
+      },
+      "handleMouseMove_": {
+        "!type": "fn(evt: ?)",
+        "!span": "8895[311:24]-8911[311:40]",
+        "!doc": "* Handle mouse move event."
+      },
+      "handleMove": {
+        "!type": "fn(x: number, y: number, svgDoc: +Element)",
+        "!span": "9253[325:24]-9263[325:34]",
+        "!doc": "* Handles mouse motion for the given coordinates."
+      },
+      "handleMouseDown_": {
+        "!type": "fn(evt: ?)",
+        "!span": "10156[349:24]-10172[349:40]",
+        "!doc": "* Handle click event."
+      },
+      "handleMouseUp_": {
+        "!type": "fn(evt: ?)",
+        "!span": "10979[379:24]-10993[379:38]",
+        "!doc": "* Handle mouse button release event."
+      },
+      "endPanOrDrag": {
+        "!type": "fn()",
+        "!span": "11150[389:24]-11162[389:36]",
+        "!doc": "* Ends pan/drag mode."
+      },
+      "handleMouseClick_": {
+        "!type": "fn(evt: ?)",
+        "!span": "11394[401:24]-11411[401:41]",
+        "!doc": "* Handle mouse clicks."
+      },
+      "getState": {
+        "!type": "fn() -> !this.state_",
+        "!span": "12094[421:24]-12102[421:32]",
+        "!doc": "* Returns the current state."
+      },
+      "!proto": "svgpan.SvgPan.prototype.!proto",
+      "!span": "51373[1574:12]-51382[1574:21]"
+    },
+    "svgpan.SvgPan.prototype.!proto": {},
+    "svgpan.SvgPan.prototype.handleMouseWheel_.!0": {},
+    "svgpan.SvgPan.prototype.getState.!ret": {},
+    "svgpan.SvgPan.base": {
+      "!type": "fn(me: ?, methodName: ?, var_args: ?)",
+      "!span": "52145[1595:12]-52149[1595:16]"
+    },
+    "Node.onload.<i>": {
+      "!type": "number",
+      "!span": "33544[1022:11]-33562[1022:29]"
+    },
+    "Function.getDescriptor.!ret": {
+      "messageType_": {
+        "!type": "fn()",
+        "!span": "1702[55:7]-1714[55:19]",
+        "!doc": "* @type {function(new:goog.proto2.Message)} @private"
+      },
+      "fields_": {
+        "<i>": {
+          "!span": "2288[84:17]-2302[84:31]"
+        },
+        "!span": "2185[80:7]-2192[80:14]",
+        "!doc": "* The fields of the message described by this descriptor."
+      }
+    },
+    "Function.getInstance.!ret": {},
+    "stubs.original_.<i>": {
+      "key": {
+        "!type": "string",
+        "!span": "7913[225:38]-7916[225:41]"
+      },
+      "!span": "7899[225:24]-7939[225:64]",
+      "object": "+Function"
+    },
+    "T.matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "T.timer_": {
+      "!type": "number",
+      "!span": "4528[130:4]-4534[132:0]",
+      "!doc": "* Timer for the peer ready ping loop."
+    },
+    "T.shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "T.id_": {
+      "!type": "number",
+      "!span": "6535[205:6]-6538[205:9]"
+    },
+    "T.isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "T.sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "T.waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "T.isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "T.disposed_": {
+      "!type": "bool",
+      "!span": "5045[179:0]-5054[181:4]"
+    },
+    "T.responseReady_": {
+      "!type": "bool",
+      "!span": "13692[376:3299]-13706[376:3313]"
+    },
+    "T.position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "T.timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "T.id": {
+      "!type": "number",
+      "!span": "11107[376:714]-11109[376:716]"
+    },
+    "T.comment": {
+      "!type": "string",
+      "!span": "11154[376:761]-11161[376:768]"
+    },
+    "T.time": {
+      "!type": "number",
+      "!span": "13407[376:3014]-13411[376:3018]"
+    },
+    "T.varAlloc": {
+      "!type": "number",
+      "!span": "13600[376:3207]-13608[376:3215]"
+    },
+    "T.ignoreCase_": {
+      "!type": "bool",
+      "!span": "40413[461:27576]-40424[461:27587]"
+    },
+    "T.metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "T.disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "T.innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "T.length": {
+      "!type": "number",
+      "!span": "33952[968:14]-33958[968:20]"
+    },
+    "T.commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "T.nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    },
+    "SCOPE.matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "SCOPE.shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "SCOPE.isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "SCOPE.sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "SCOPE.waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "SCOPE.isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "SCOPE.position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "SCOPE.timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "SCOPE.disposed_": {
+      "!type": "bool",
+      "!span": "5045[175:9]-5054[175:18]"
+    },
+    "SCOPE.responseReady_": {
+      "!type": "bool",
+      "!span": "13692[433:13]-13706[433:27]"
+    },
+    "SCOPE.<i>": {
+      "!type": "number",
+      "!span": "33544[1022:11]-33562[1022:29]"
+    },
+    "SCOPE.metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "SCOPE.disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "SCOPE.innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "SCOPE.commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "SCOPE.nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    }
+  },
+  "Math": {
+    "sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[469:11]-14808[469:31]"
+    },
+    "waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[470:11]-14839[470:22]"
+    },
+    "isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[200:9]-6365[200:18]"
+    },
+    "position_": {
+      "!type": "number",
+      "!span": "4234[165:9]-4243[165:18]"
+    },
+    "timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[706:11]-20743[706:25]"
+    },
+    "metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[680:13]-22382[680:37]"
+    },
+    "disableHover_": {
+      "!type": "bool",
+      "!span": "6716[212:9]-6729[212:22]"
+    },
+    "innerHTML": {
+      "!type": "string",
+      "!span": "14205[490:11]-14214[490:20]"
+    }
+  },
+  "location": {
+    "href": {
+      "!type": "string",
+      "!span": "26866[716:10]-26870[716:14]",
+      "!doc": "The entire URL."
+    }
+  },
+  "Element": {
+    "prototype": {
+      "style": {
+        "cssText": {
+          "!type": "string",
+          "!span": "11682[337:65]-11689[338:1]"
+        },
+        "backgroundColor": {
+          "!type": "string",
+          "!span": "19143[424:6891]-19158[424:6906]",
+          "!doc": "Color to fill the range background with."
+        },
+        "backgroundPosition": {
+          "!type": "string",
+          "!span": "46054[1243:10]-46072[1243:28]"
+        },
+        "backgroundRepeat": {
+          "!type": "string",
+          "!span": "46097[1244:10]-46113[1244:26]"
+        },
+        "color": {
+          "!type": "string",
+          "!span": "10579[363:14]-10584[363:19]"
+        },
+        "font": {
+          "!type": "string",
+          "!span": "10745[370:14]-10749[370:18]"
+        },
+        "fontWeight": {
+          "!type": "string",
+          "!span": "11564[394:16]-11574[394:26]"
+        },
+        "marginBottom": {
+          "!type": "string",
+          "!span": "10963[375:16]-10975[375:28]"
+        },
+        "marginLeft": {
+          "!type": "string",
+          "!span": "36280[1202:20]-36290[1202:30]"
+        },
+        "marginTop": {
+          "!type": "string",
+          "!span": "36266[1202:6]-36275[1202:15]"
+        },
+        "outline": {
+          "!type": "string",
+          "!span": "55851[1497:18]-55858[1497:25]"
+        },
+        "overflow": {
+          "!type": "string",
+          "!span": "3365[89:41]-3373[89:49]"
+        },
+        "right": {
+          "!type": "string",
+          "!span": "6961[177:15]-6966[177:20]"
+        },
+        "textAlign": {
+          "!type": "string",
+          "!span": "28097[846:20]-28106[846:29]"
+        },
+        "whiteSpace": {
+          "!type": "string",
+          "!span": "52855[424:40603]-52865[424:40613]"
+        },
+        "wordWrap": {
+          "!type": "string",
+          "!span": "52885[424:40633]-52893[424:40641]"
+        },
+        "MozBoxSizing": {
+          "!type": "string",
+          "!span": "61540[1655:10]-61552[1655:22]"
+        },
+        "WebkitBoxSizing": {
+          "!type": "string",
+          "!span": "61614[1657:10]-61629[1657:25]"
+        }
+      }
+    },
+    "disabled": {
+      "!type": "bool",
+      "!span": "5681[182:7]-5689[182:15]"
+    },
+    "checked": {
+      "!type": "string",
+      "!span": "10567[366:5]-10574[366:12]"
+    },
+    "src": {
+      "!type": "string",
+      "!span": "3763[118:0]-3766[118:3]"
+    },
+    "onreadystatechange": {
+      "!type": "fn()",
+      "!span": "5877[164:2]-5895[164:20]",
+      "!doc": "NOTE(user): Stops Internet Explorer leaking the iframe object."
+    },
+    "dir": {
+      "!type": "string",
+      "!span": "28219[849:14]-28222[849:17]"
+    },
+    "defer": {
+      "!type": "bool",
+      "!span": "42599[1306:16]-42604[1306:21]"
+    },
+    "dlgDragHoverClass_": {
+      "!type": "string",
+      "!span": "9462[326:18]-9480[326:36]"
+    },
+    "selected": {
+      "!type": "bool",
+      "!span": "5205[138:4]-5213[138:12]"
+    },
+    "isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "onload": {
+      "!type": "fn()",
+      "!span": "5830[161:30]-5836[161:36]",
+      "!doc": "Hang the user callback to be called when the script completes to load."
+    },
+    "onerror": {
+      "!type": "fn()",
+      "!span": "6236[177:3]-6243[177:10]",
+      "!doc": "Add an error callback."
+    },
+    "disposed_": {
+      "!type": "bool",
+      "!span": "5045[175:9]-5054[175:18]"
+    },
+    "acceptCharset": {
+      "!type": "string",
+      "!span": "10702[328:28]-10715[328:41]"
+    },
+    "action": {
+      "!type": "fn()",
+      "!span": "16554[565:13]-16560[565:19]",
+      "!doc": "Work around crbug.com/66987"
+    },
+    "method": {
+      "!type": "string",
+      "!span": "16595[566:13]-16601[566:19]"
+    },
+    "responseReady_": {
+      "!type": "bool",
+      "!span": "13692[433:13]-13706[433:27]"
+    },
+    "sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "allowTransparency": {
+      "!type": "string",
+      "!span": "85324[2695:9]-85341[2695:26]"
+    },
+    "border": {
+      "!type": "string",
+      "!span": "18815[564:15]-18821[564:21]"
+    },
+    "rel": {
+      "!type": "string",
+      "!span": "11715[372:13]-11718[372:16]"
+    },
+    "matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "timer_": {
+      "!type": "number",
+      "!span": "4528[130:4]-4534[132:0]"
+    },
+    "shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "id_": {
+      "!type": "number",
+      "!span": "6535[205:6]-6538[205:9]"
+    },
+    "isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "fillcolor": {
+      "!type": "string",
+      "!span": "12630[390:10]-12639[390:19]"
+    },
+    "coordsize": {
+      "!type": "string",
+      "!span": "13687[422:12]-13696[422:21]"
+    },
+    "title": {
+      "!type": "string",
+      "!span": "4708[140:15]-4713[141:2]"
+    },
+    "metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "length": {
+      "!type": "number",
+      "!span": "33952[968:14]-33958[968:20]"
+    },
+    "stack": {
+      "!type": "string",
+      "!span": "11398[355:10]-11403[355:15]"
+    },
+    "commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    },
+    "_uid": {
+      "!type": "number",
+      "!span": "49305[1401:34]-49311[1401:40]"
+    },
+    "nodeValue": {
+      "!type": "string",
+      "!span": "27110[270:17373]-27119[270:17382]"
+    },
+    "id": {
+      "!type": "string",
+      "!span": "28502[837:17]-28504[837:19]"
+    },
+    "className": {
+      "!type": "string",
+      "!span": "10292[289:7]-10301[289:16]"
+    },
+    "cancelBubble": {
+      "!type": "bool",
+      "!span": "9761[334:16]-9773[334:28]"
+    },
+    "returnValue": {
+      "!type": "bool",
+      "!span": "10002[346:7]-10013[346:18]"
+    },
+    "keyCode": {
+      "!type": "number",
+      "!span": "10728[364:13]-10735[364:20]"
+    },
+    "hideFocus": {
+      "!type": "bool",
+      "!span": "10364[291:7]-10373[291:16]"
+    },
+    "innerHTML": {
+      "!type": "string",
+      "!span": "10465[191:4674]-10474[191:4683]"
+    },
+    "lastWidth_": "lastWidth_",
+    "resizeDelay_": "resizeDelay_",
+    "size_": "size_",
+    "currentTarget": "currentTarget",
+    "$pendingExpectation": "$pendingExpectation",
+    "R": "R",
+    "TARGET": "TARGET",
+    "defaultScope_": "?",
+    "constructorStack_": "constructorStack_",
+    "SVGMatrix": "SVGMatrix",
+    "SVGPoint": "SVGPoint",
+    "ImageData": "ImageData"
+  },
+  "setTimeout": {
+    "!type": "fn(f: fn(), ms: number) -> number",
+    "!span": "12406[449:14]-12416[449:24]",
+    "!doc": "Calls a function or executes a code snippet after specified delay."
+  },
+  "clearTimeout": {
+    "!type": "fn(timeout: number)",
+    "!span": "12331[448:14]-12343[448:26]",
+    "!doc": "Clears the delay set by window.setTimeout()."
+  },
+  "onload": {
+    "!type": "fn(e: +Event)",
+    "!span": "5818[95:2986]-5824[95:2992]",
+    "!doc": "* Onload handler that runs the benchmarks."
+  },
+  "onerror": {
+    "!type": "fn(message: string, url: string, line: number, opt_col?: number, opt_error?: +Error) -> bool",
+    "!span": "3495[89:43]-3502[89:50]",
+    "!doc": "* New onerror handler for this target."
+  },
+  "IDBTransaction": "fn()",
+  "IDBIndex": "fn()",
+  "IDBKeyType": "fn()",
+  "IDBDatabase": "fn()",
+  "DOMStringList": "fn()",
+  "DOMError": "fn()",
+  "IDBRequest": "fn()",
+  "IDBDatabaseException": "fn()",
+  "IDBObjectStore": "fn()",
+  "IDBCursor": "fn()",
+  "IDBKeyRange": "fn()",
+  "TextRange": "fn()",
+  "Window": "fn()",
+  "THIS": "fn()",
+  "requestAnimationFrame": {
+    "!type": "fn(callback: fn(), element: ?) -> number",
+    "!span": "1318[36:11]-1339[36:32]"
+  },
+  "cancelAnimationFrame": {
+    "!type": "fn(id: ?)",
+    "!span": "1407[38:11]-1427[38:31]"
+  },
+  "Arguments": "fn()",
+  "Location": "fn()",
+  "Float32Array": "fn()",
+  "T": "fn()",
+  "SCOPE": "fn()",
+  "S": "fn()",
+  "testScrollbarWidth": {
+    "!type": "fn()",
+    "!span": "1067[32:9]-1085[32:27]",
+    "!doc": "* Tests the scrollbar width calculation."
+  },
+  "hasVerticalScroll": {
+    "!type": "fn(el: ?) -> bool",
+    "!span": "2400[70:9]-2417[70:26]"
+  },
+  "hasHorizontalScroll": {
+    "!type": "fn(el: ?) -> bool",
+    "!span": "2506[75:9]-2525[75:28]"
+  },
+  "StyleSheet": "fn()",
+  "EventTarget": "fn()",
+  "EVENTOBJ": "fn()",
+  "listen": {
+    "!type": "+Function",
+    "!span": "6124[188:4]-6130[188:10]"
+  },
+  "keyType": {
+    "!span": "6243[190:4]-6250[190:11]"
+  },
+  "unlistenReturnType": {
+    "!span": "6252[190:13]-6270[190:31]"
+  },
+  "objectTypeListenerSupported": {
+    "!type": "bool",
+    "!span": "6272[190:33]-6299[190:60]"
+  },
+  "eventTargets": {
+    "!type": "[?]",
+    "!span": "6305[191:4]-6317[191:16]"
+  },
+  "listeners": {
+    "!type": "[?]",
+    "!span": "6319[191:18]-6328[191:27]"
+  },
+  "TestEvent": {
+    "!type": "fn()",
+    "!span": "6439[201:4]-6448[201:13]",
+    "!doc": "* Custom event object for testing."
+  },
+  "createListener": {
+    "!type": "fn(opt_listenerFn: ?)",
+    "!span": "6748[212:9]-6762[212:23]",
+    "!doc": "* Creates a listener that executes the given function (optional)."
+  },
+  "assertListenerIsCalled": {
+    "!type": "fn(listener: ?, numCount: number)",
+    "!span": "7074[223:9]-7096[223:31]",
+    "!doc": "* Asserts that the given listener is called numCount number of times."
+  },
+  "assertNoOtherListenerIsCalled": {
+    "!type": "fn()",
+    "!span": "7549[236:9]-7578[236:38]",
+    "!doc": "* Asserts that no other listeners, other than those verified via assertListenerIsCalled, have been called since the last resetListeners()."
+  },
+  "resetListeners": {
+    "!type": "fn()",
+    "!span": "8062[254:9]-8076[254:23]",
+    "!doc": "* Resets all listeners call count to 0."
+  },
+  "times": {
+    "!type": "fn(n: number) -> !0",
+    "!span": "8548[270:9]-8553[270:14]",
+    "!doc": "* The number of times a listener should have been executed."
+  },
+  "testNoListener": {
+    "!type": "fn()",
+    "!span": "8584[275:9]-8598[275:23]"
+  },
+  "testOneListener": {
+    "!type": "fn()",
+    "!span": "8698[281:9]-8713[281:24]"
+  },
+  "testTwoListenersOfSameType": {
+    "!type": "fn()",
+    "!span": "9068[295:9]-9094[295:35]"
+  },
+  "testInstallingSameListeners": {
+    "!type": "fn()",
+    "!span": "9593[313:9]-9620[313:36]"
+  },
+  "testScope": {
+    "!type": "fn()",
+    "!span": "10290[337:9]-10299[337:18]"
+  },
+  "testDispatchEventDoesNotThrowWithDisposedEventTarget": {
+    "!type": "fn()",
+    "!span": "11100[359:9]-11152[359:61]"
+  },
+  "testDispatchEventWithObjectLiteral": {
+    "!type": "fn()",
+    "!span": "11262[365:9]-11296[365:43]"
+  },
+  "testDispatchEventWithCustomEventObject": {
+    "!type": "fn()",
+    "!span": "11521[374:9]-11559[374:47]"
+  },
+  "testDisposingEventTargetRemovesListeners": {
+    "!type": "fn()",
+    "!span": "11943[389:9]-11983[389:49]"
+  },
+  "testUnlistenWorksAfterDisposal": {
+    "!type": "fn()",
+    "!span": "12563[408:9]-12593[408:39]",
+    "!doc": "* Unlisten/unlistenByKey should still work after disposal."
+  },
+  "testRemovingListener": {
+    "!type": "fn()",
+    "!span": "12832[418:9]-12852[418:29]"
+  },
+  "testCapture": {
+    "!type": "fn()",
+    "!span": "13968[455:9]-13979[455:20]"
+  },
+  "testBubble": {
+    "!type": "fn()",
+    "!span": "15858[506:9]-15868[506:19]"
+  },
+  "testCaptureAndBubble": {
+    "!type": "fn()",
+    "!span": "17684[557:9]-17704[557:29]"
+  },
+  "testPreventDefaultByReturningFalse": {
+    "!type": "fn()",
+    "!span": "18563[580:9]-18597[580:43]"
+  },
+  "testPreventDefault": {
+    "!type": "fn()",
+    "!span": "18934[591:9]-18952[591:27]"
+  },
+  "testPreventDefaultAtCapture": {
+    "!type": "fn()",
+    "!span": "19295[602:9]-19322[602:36]"
+  },
+  "testStopPropagation": {
+    "!type": "fn()",
+    "!span": "19677[613:9]-19696[613:28]"
+  },
+  "testStopPropagation2": {
+    "!type": "fn()",
+    "!span": "20300[631:9]-20320[631:29]"
+  },
+  "testStopPropagation3": {
+    "!type": "fn()",
+    "!span": "20924[649:9]-20944[649:29]"
+  },
+  "testStopPropagationAtCapture": {
+    "!type": "fn()",
+    "!span": "21598[668:9]-21626[668:37]"
+  },
+  "testHandleEvent": {
+    "!type": "fn()",
+    "!span": "22306[687:9]-22321[687:24]"
+  },
+  "testListenOnce": {
+    "!type": "fn()",
+    "!span": "22606[702:9]-22620[702:23]"
+  },
+  "testUnlistenInListen": {
+    "!type": "fn()",
+    "!span": "23442[731:9]-23462[731:29]"
+  },
+  "testUnlistenByKeyInListen": {
+    "!type": "fn()",
+    "!span": "24470[760:9]-24495[760:34]"
+  },
+  "testSetParentEventTarget": {
+    "!type": "fn()",
+    "!span": "25544[794:9]-25568[794:33]"
+  },
+  "testListenOnceAfterListenDoesNotChangeExistingListener": {
+    "!type": "fn()",
+    "!span": "25926[806:9]-25980[806:63]"
+  },
+  "testListenOnceAfterListenOnceDoesNotChangeExistingListener": {
+    "!type": "fn()",
+    "!span": "26376[823:9]-26434[823:67]"
+  },
+  "testListenAfterListenOnceRemoveOnceness": {
+    "!type": "fn()",
+    "!span": "26834[840:9]-26873[840:48]"
+  },
+  "testUnlistenAfterListenOnce": {
+    "!type": "fn()",
+    "!span": "27269[857:9]-27296[857:36]"
+  },
+  "testRemoveAllWithType": {
+    "!type": "fn()",
+    "!span": "28201[885:9]-28222[885:30]"
+  },
+  "testRemoveAll": {
+    "!type": "fn()",
+    "!span": "29172[913:9]-29185[913:22]"
+  },
+  "testRemoveAllCallsMarkAsRemoved": {
+    "!type": "fn()",
+    "!span": "29922[937:9]-29953[937:40]"
+  },
+  "testGetListeners": {
+    "!type": "fn()",
+    "!span": "30568[962:9]-30584[962:25]"
+  },
+  "testGetListener": {
+    "!type": "fn()",
+    "!span": "31313[987:9]-31328[987:24]"
+  },
+  "testHasListener": {
+    "!type": "fn()",
+    "!span": "31845[1003:9]-31860[1003:24]"
+  },
+  "testFiringEventBeforeDisposeInternalWorks": {
+    "!type": "fn()",
+    "!span": "32544[1024:9]-32585[1024:50]"
+  },
+  "testLoopDetection": {
+    "!type": "fn()",
+    "!span": "33124[1051:9]-33141[1051:26]"
+  },
+  "RESOLVER_CONTEXT": "fn()",
+  "TYPE": "fn()",
+  "Thenable": "fn()",
+  "IThenable": "fn()",
+  "RESULT": "fn()",
+  "Float64Array": "fn()",
+  "ArrayBuffer": "fn()",
+  "float64ArrayError": {
+    "!type": "+Error",
+    "!span": "3208[104:11]-3225[104:28]"
+  },
+  "Entry": "fn()",
+  "DirectoryEntry": "fn()",
+  "FileEntry": "fn()",
+  "FileSaver": "fn()",
+  "ProgressEvent": "fn()",
+  "FileSystem": "fn()",
+  "FileWriter": "fn()",
+  "ARG_TYPES": "fn()",
+  "RETURN_TYPE": "fn()",
+  "SanitizedContentSubclass": {
+    "!type": "fn(content: string, kind: ?)",
+    "!span": "1456[43:9]-1480[43:33]",
+    "!doc": "* Instantiable subclass of SanitizedContent."
+  },
+  "makeSanitizedContent": {
+    "!type": "fn(content: string, kind: ?) -> +SanitizedContentSubclass",
+    "!span": "1709[51:9]-1729[51:29]"
+  },
+  "fragmentToHtml": {
+    "!type": "fn(fragment: +Node)",
+    "!span": "4619[161:9]-4633[161:23]",
+    "!doc": "* Retrieves the content of document fragment as HTML."
+  },
+  "elementToInnerHtml": {
+    "!type": "fn(elem: +Element) -> !0.innerHTML",
+    "!span": "4938[173:9]-4956[173:27]",
+    "!doc": "* Retrieves the content of an element as HTML."
+  },
+  "nodeGlobalRequire": {
+    "!type": "fn(file: ?)",
+    "!span": "1886[67:9]-1903[67:26]",
+    "!doc": "Declared here so it can be used to require base.js"
+  },
+  "CLOSURE_IMPORT_SCRIPT": {
+    "!type": "fn(src: string) -> bool",
+    "!span": "1189[31:5]-1210[31:26]",
+    "!doc": "* Imports a script using the Web Worker importScript API."
+  },
+  "void": "fn()",
+  "testSeparateSet": {
+    "!type": "fn()",
+    "!span": "1311[36:9]-1326[36:24]"
+  },
+  "testSeparateSetInverse": {
+    "!type": "fn()",
+    "!span": "1643[48:9]-1665[48:31]"
+  },
+  "testSeparateRemove": {
+    "!type": "fn()",
+    "!span": "2073[63:9]-2091[63:27]"
+  },
+  "testSeparateClean": {
+    "!type": "fn()",
+    "!span": "2495[78:9]-2512[78:26]"
+  },
+  "testCount": {
+    "!type": "fn()",
+    "!span": "1105[33:9]-1114[33:18]"
+  },
+  "testIteratorBasics": {
+    "!type": "fn()",
+    "!span": "1434[47:9]-1452[47:27]"
+  },
+  "testIteratorWithTwoValues": {
+    "!type": "fn()",
+    "!span": "1830[61:9]-1855[61:34]"
+  },
+  "testClear": {
+    "!type": "fn()",
+    "!span": "2157[73:9]-2166[73:18]"
+  },
+  "testClearClear": {
+    "!type": "fn()",
+    "!span": "2637[90:9]-2651[90:23]"
+  },
+  "testIteratorWithWeirdKeys": {
+    "!type": "fn()",
+    "!span": "2788[100:9]-2813[100:34]"
+  },
+  "minimumQuota": {
+    "!type": "number",
+    "!span": "1251[34:4]-1263[34:16]"
+  },
+  "testSetGet": {
+    "!type": "fn()",
+    "!span": "1280[37:9]-1290[37:19]"
+  },
+  "testChange": {
+    "!type": "fn()",
+    "!span": "1424[46:9]-1434[46:19]"
+  },
+  "testRemove": {
+    "!type": "fn()",
+    "!span": "1601[56:9]-1611[56:19]"
+  },
+  "testSetRemoveSet": {
+    "!type": "fn()",
+    "!span": "1765[66:9]-1781[66:25]"
+  },
+  "testRemoveRemove": {
+    "!type": "fn()",
+    "!span": "1977[77:9]-1993[77:25]"
+  },
+  "testSetTwo": {
+    "!type": "fn()",
+    "!span": "2143[87:9]-2153[87:19]"
+  },
+  "testChangeTwo": {
+    "!type": "fn()",
+    "!span": "2369[98:9]-2382[98:22]"
+  },
+  "testSetRemoveThree": {
+    "!type": "fn()",
+    "!span": "2671[111:9]-2689[111:27]"
+  },
+  "testEmptyValue": {
+    "!type": "fn()",
+    "!span": "3193[130:9]-3207[130:23]"
+  },
+  "testWeirdKeys": {
+    "!type": "fn()",
+    "!span": "3335[139:9]-3348[139:22]"
+  },
+  "testQuota": {
+    "!type": "fn()",
+    "!span": "4672[173:9]-4681[173:18]"
+  },
+  "testSharedSet": {
+    "!type": "fn()",
+    "!span": "1335[36:9]-1348[36:22]"
+  },
+  "testSharedSetInverse": {
+    "!type": "fn()",
+    "!span": "1733[50:9]-1753[50:29]"
+  },
+  "testSharedRemove": {
+    "!type": "fn()",
+    "!span": "2124[64:9]-2140[64:25]"
+  },
+  "testSharedClean": {
+    "!type": "fn()",
+    "!span": "2487[77:9]-2502[77:24]"
+  },
+  "Storage": "fn()",
+  "lastWidth_": {
+    "!type": "fn()",
+    "!span": "5225[156:9]-5235[156:19]"
+  },
+  "resizeDelay_": {
+    "!span": "3864[133:9]-3876[133:21]",
+    "interval_": {
+      "!type": "number",
+      "!span": "2019[61:7]-2028[61:16]"
+    },
+    "matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "timer_": {
+      "!type": "number",
+      "!span": "4528[130:4]-4534[132:0]"
+    },
+    "shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "id_": {
+      "!type": "number",
+      "!span": "6535[205:6]-6538[205:9]"
+    },
+    "isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "<i>": {
+      "!type": "number",
+      "!span": "33544[1022:11]-33562[1022:29]"
+    },
+    "sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    },
+    "$pendingExpectation": "$pendingExpectation",
+    "type": "type",
+    "R": "R",
+    "TARGET": "TARGET",
+    "defaultScope_": "?",
+    "constructorStack_": "constructorStack_",
+    "SVGMatrix": "SVGMatrix",
+    "SVGPoint": "SVGPoint",
+    "ImageData": "ImageData"
+  },
+  "size_": {
+    "!span": "5905[176:9]-5910[176:14]"
+  },
+  "CSSRule": "fn()",
+  "EventHandler": "fn()",
+  "Timer": "fn()",
+  "Deferred": "fn()",
+  "Transport": "fn()",
+  "DirectTransport": {
+    "Message_": "fn()"
+  },
+  "ArrayBufferView": "fn()",
+  "FormData": "fn()",
+  "Image": "fn()",
+  "test1": {
+    "!type": "string",
+    "!span": "792[22:7]-799[22:14]"
+  },
+  "XDomainRequest": "fn()",
+  "isLoaded_": {
+    "!type": "bool",
+    "!span": "6356[201:5]-6365[201:14]"
+  },
+  "disposed_": {
+    "!type": "bool",
+    "!span": "5045[175:9]-5054[175:18]"
+  },
+  "MessageEvent": "fn()",
+  "ActiveXObject": "fn()",
+  "responseReady_": {
+    "!type": "bool",
+    "!span": "13692[433:13]-13706[433:27]"
+  },
+  "sentConnectionSetup_": {
+    "!type": "bool",
+    "!span": "14788[520:16]-14808[520:36]"
+  },
+  "waitForAck_": {
+    "!type": "bool",
+    "!span": "14828[521:14]-14839[521:25]"
+  },
+  "createRegistryEntries": {
+    "!type": "fn(queryParams: string, opt_compilerOverrides: createRegistryEntries.!1)",
+    "!span": "1618[53:9]-1639[53:30]",
+    "!doc": "* Creates a registry with some entries in it."
+  },
+  "CallSite": "fn()",
+  "assertIsVisible": {
+    "!type": "fn(a: ?, opt_b?: +Element)",
+    "!span": "1227[34:4]-1242[34:19]",
+    "!doc": "* Asserts that an element has: 1 - a CSS rendering the makes the element visible."
+  },
+  "assertNotVisible": {
+    "!type": "fn(a: ?, opt_b?: +Element)",
+    "!span": "1749[50:4]-1765[50:20]",
+    "!doc": "* The counter assertion of assertIsVisible()."
+  },
+  "assertIntersect": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "2427[71:4]-2442[71:19]",
+    "!doc": "* Asserts that the two specified elements intersect."
+  },
+  "assertNoIntersect": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "3074[89:4]-3091[89:21]",
+    "!doc": "* Asserts that the two specified elements do not intersect."
+  },
+  "assertWidth": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "3726[107:4]-3737[107:15]",
+    "!doc": "* Asserts that the element must have the specified width."
+  },
+  "assertWidthWithinTolerance": {
+    "!type": "fn(a: ?, b: ?, c: number, opt_d?: number)",
+    "!span": "4629[131:4]-4655[131:30]",
+    "!doc": "* Asserts that the element must have the specified width within the specified tolerance."
+  },
+  "assertHeight": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "5551[154:4]-5563[154:16]",
+    "!doc": "* Asserts that the element must have the specified height."
+  },
+  "assertHeightWithinTolerance": {
+    "!type": "fn(a: ?, b: ?, c: number, opt_d?: number)",
+    "!span": "6434[178:4]-6461[178:31]",
+    "!doc": "* Asserts that the element must have the specified height within the specified tolerance."
+  },
+  "assertIsLeftOf": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "7376[201:4]-7390[201:18]",
+    "!doc": "* Asserts that the first element is to the left of the second element."
+  },
+  "assertIsStrictlyLeftOf": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "8142[221:4]-8164[221:26]",
+    "!doc": "* Asserts that the first element is strictly left of the second element."
+  },
+  "assertIsAbove": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "8940[241:4]-8953[241:17]",
+    "!doc": "* Asserts that the first element is higher than the second element."
+  },
+  "assertIsStrictlyAbove": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "9707[261:4]-9728[261:25]",
+    "!doc": "* Asserts that the first element is strictly higher than the second element."
+  },
+  "assertContained": {
+    "!type": "fn(a: ?, b: +Element, opt_c?: +Element)",
+    "!span": "10522[282:4]-10537[282:19]",
+    "!doc": "* Asserts that the first element's bounds contain the bounds of the second element."
+  },
+  "MessageType": "fn()",
+  "matched": {
+    "!type": "bool",
+    "!span": "1664[46:1]-1671[46:8]"
+  },
+  "timer_": {
+    "!type": "number",
+    "!span": "4528[130:4]-4534[132:0]"
+  },
+  "shouldFire_": {
+    "!type": "bool",
+    "!span": "4600[137:42]-4611[137:53]"
+  },
+  "id_": {
+    "!type": "number",
+    "!span": "6535[205:6]-6538[205:9]"
+  },
+  "isDone_": {
+    "!type": "bool",
+    "!span": "6977[228:3]-6984[229:6]"
+  },
+  "position_": {
+    "!type": "number",
+    "!span": "4234[121:24]-4243[122:8]"
+  },
+  "currentTarget": {
+    "!span": "12412[426:0]-12425[426:13]"
+  },
+  "DOUBLE_EQUALITY_PREDICATE": {
+    "!type": "fn(var1: ?, var2: ?) -> bool",
+    "!span": "962[27:4]-987[27:29]"
+  },
+  "TO_STRING_EQUALITY_PREDICATE": {
+    "!type": "fn(var1: ?, var2: ?) -> bool",
+    "!span": "1071[31:4]-1099[31:32]"
+  },
+  "PRIMITIVE_EQUALITY_PREDICATES": {
+    "Date": {
+      "!type": "fn(date1: ?, date2: ?) -> bool",
+      "!span": "1333[39:2]-1339[39:8]"
+    },
+    "!span": "1179[35:4]-1208[35:33]",
+    "String": "DOUBLE_EQUALITY_PREDICATE",
+    "Number": "DOUBLE_EQUALITY_PREDICATE",
+    "Boolean": "DOUBLE_EQUALITY_PREDICATE",
+    "RegExp": "TO_STRING_EQUALITY_PREDICATE",
+    "Function": "TO_STRING_EQUALITY_PREDICATE"
+  },
+  "_trueTypeOf": {
+    "!type": "fn(something: ?)",
+    "!span": "2170[71:4]-2181[71:15]"
+  },
+  "_displayStringForValue": {
+    "!type": "fn(aVar: ?) -> string",
+    "!span": "3561[128:4]-3583[128:26]"
+  },
+  "fail": {
+    "!type": "fn(failureMessage: string)",
+    "!span": "3924[142:4]-3928[142:8]"
+  },
+  "argumentsIncludeComments": {
+    "!type": "fn(expectedNumberOfNonCommentArgs: number, args: [?]) -> bool",
+    "!span": "4039[146:4]-4063[146:28]"
+  },
+  "commentArg": {
+    "!type": "fn(expectedNumberOfNonCommentArgs: number, args: [?]) -> !1.<i>",
+    "!span": "4183[150:4]-4193[150:14]"
+  },
+  "nonCommentArg": {
+    "!type": "fn(desiredNonCommentArgIndex: number, expectedNumberOfNonCommentArgs: number, args: [?]) -> !2.<i>",
+    "!span": "4365[158:4]-4378[158:17]"
+  },
+  "_validateArguments": {
+    "!type": "fn(expectedNumberOfNonCommentArgs: number, args: [?])",
+    "!span": "4626[165:4]-4644[165:22]"
+  },
+  "_assert": {
+    "!type": "fn(comment: ?, booleanValue: ?, failureMessage: ?)",
+    "!span": "4929[172:4]-4936[172:11]"
+  },
+  "assert": {
+    "!type": "fn(a: string, opt_b: bool)",
+    "!span": "6787[230:4]-6793[230:10]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertThrows": {
+    "!type": "fn(a: ?, opt_b: +Function) -> +Error",
+    "!span": "7496[250:4]-7508[250:16]",
+    "!doc": "* Asserts that the function throws an error."
+  },
+  "assertNotThrows": {
+    "!type": "fn(a: ?, opt_b: +Function)",
+    "!span": "8703[283:4]-8718[283:19]",
+    "!doc": "* Asserts that the function does not throw an error."
+  },
+  "assertThrowsJsUnitException": {
+    "!type": "fn(callback: ?, opt_expectedMessage?: string)",
+    "!span": "9839[313:4]-9866[313:31]",
+    "!doc": "* Asserts that the given callback function results in a JsUnitException when called, and that the resulting failure message matches the given expected message."
+  },
+  "assertTrue": {
+    "!type": "fn(a: ?, opt_b: bool)",
+    "!span": "10543[338:4]-10553[338:14]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertFalse": {
+    "!type": "fn(a: ?, opt_b: bool)",
+    "!span": "11024[353:4]-11035[353:15]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertEquals": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "11583[369:4]-11595[369:16]",
+    "!doc": "* @param {*} a The expected value (2 args) or the debug message (3 args)."
+  },
+  "assertNotEquals": {
+    "!type": "fn(a: string, b: string, opt_c: ?)",
+    "!span": "12083[383:4]-12098[383:19]",
+    "!doc": "* @param {*} a The expected value (2 args) or the debug message (3 args)."
+  },
+  "assertNull": {
+    "!type": "fn(a: string, opt_b: ?)",
+    "!span": "12507[396:4]-12517[396:14]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertNotNull": {
+    "!type": "fn(a: string, opt_b: ?)",
+    "!span": "12878[408:4]-12891[408:17]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertUndefined": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "13252[420:4]-13267[420:19]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertNotUndefined": {
+    "!type": "fn(a: string, opt_b: +Attr)",
+    "!span": "13664[432:4]-13682[432:22]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertNotNullNorUndefined": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "14079[444:4]-14104[444:29]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertNonEmptyString": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "14393[455:4]-14413[455:24]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertNaN": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "14878[469:4]-14887[469:13]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertNotNaN": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "15202[480:4]-15214[480:16]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertObjectEquals": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "24726[725:4]-24744[725:22]",
+    "!doc": "* Notes: Object equality has some nasty browser quirks, and this implementation is not 100% correct."
+  },
+  "assertObjectRoughlyEquals": {
+    "!type": "fn(a: ?, b: ?, c: ?, opt_d: ?)",
+    "!span": "25396[744:4]-25421[744:29]",
+    "!doc": "* Similar to assertObjectEquals above, but accepts a tolerance margin."
+  },
+  "assertObjectNotEquals": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "26733[778:4]-26754[778:25]",
+    "!doc": "* Compares two arbitrary objects for non-equalness."
+  },
+  "assertArrayEquals": {
+    "!type": "fn(a: string, b: [?], opt_c: [?])",
+    "!span": "27603[798:4]-27620[798:21]",
+    "!doc": "* Compares two arrays ignoring negative indexes and extra properties on the array objects."
+  },
+  "assertElementsEquals": {
+    "!type": "fn(a: ?, b: ?, opt_c?: ?)",
+    "!span": "28648[827:4]-28668[827:24]",
+    "!doc": "* Compares two objects that can be accessed like an array and assert that each element is equal."
+  },
+  "assertElementsRoughlyEqual": {
+    "!type": "fn(a: ?, b: ?, c: ?, opt_d?: number)",
+    "!span": "29605[855:4]-29631[855:30]",
+    "!doc": "* Compares two objects that can be accessed like an array and assert that each element is roughly equal."
+  },
+  "assertSameElements": {
+    "!type": "fn(a: ?, b: ?, opt_c: assertSameElements.!2)",
+    "!span": "30528[882:4]-30546[882:22]",
+    "!doc": "* Compares two array-like objects without taking their order into account."
+  },
+  "assertEvaluatesToTrue": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "31838[915:4]-31859[915:25]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertEvaluatesToFalse": {
+    "!type": "fn(a: ?, opt_b: ?)",
+    "!span": "32207[928:4]-32229[928:26]",
+    "!doc": "* @param {*} a The value to assert (1 arg) or debug message (2 args)."
+  },
+  "assertHTMLEquals": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "33181[955:4]-33197[955:20]",
+    "!doc": "* Compares two HTML snippets."
+  },
+  "assertCSSValueEquals": {
+    "!type": "fn(a: string, b: string, c: string, opt_d?: string)",
+    "!span": "34401[981:4]-34421[981:24]",
+    "!doc": "* Compares two CSS property values to make sure that they represent the same things."
+  },
+  "assertHashEquals": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "35262[1003:4]-35278[1003:20]",
+    "!doc": "* @param {*} a The expected value (2 args) or the debug message (3 args)."
+  },
+  "assertRoughlyEquals": {
+    "!type": "fn(a: ?, b: ?, c: number, opt_d: ?)",
+    "!span": "36164[1028:4]-36183[1028:23]",
+    "!doc": "* @param {*} a The expected value (3 args) or the debug message (4 args)."
+  },
+  "assertContains": {
+    "!type": "fn(a: string, b: ?, opt_c: ?)",
+    "!span": "36944[1049:4]-36958[1049:18]",
+    "!doc": "* Checks if the given element is the member of the given container."
+  },
+  "assertNotContains": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "37601[1067:4]-37618[1067:21]",
+    "!doc": "* Checks if the given element is not the member of the given container."
+  },
+  "assertRegExp": {
+    "!type": "fn(a: ?, b: ?, opt_c: ?)",
+    "!span": "38304[1085:4]-38316[1085:16]",
+    "!doc": "* Checks if the given string matches the given regular expression."
+  },
+  "standardizeHTML": {
+    "!type": "fn(html: ?) -> string",
+    "!span": "40404[1152:4]-40419[1152:19]"
+  },
+  "standardizeCSSValue": {
+    "!type": "fn(propertyName: string, value: string) -> !1",
+    "!span": "40897[1168:4]-40916[1168:23]",
+    "!doc": "* Standardizes a CSS value for a given property by applying it to an element and then reading it back."
+  },
+  "timeoutHandle_": {
+    "!type": "number",
+    "!span": "20729[637:2308]-20743[637:2322]"
+  },
+  "$pendingExpectation": {
+    "!span": "9843[320:32]-9862[320:51]",
+    "name": {
+      "!type": "string",
+      "!span": "2036[59:7]-2040[59:11]",
+      "!doc": "The name of the method that is expected to be called."
+    },
+    "errorMessages": {
+      "!type": "[string]",
+      "!span": "2146[65:7]-2159[65:20]",
+      "!doc": "An array of error messages for expectations not met."
+    },
+    "minCalls": {
+      "!type": "number",
+      "!span": "12870[443:27]-12878[443:35]"
+    },
+    "maxCalls": {
+      "!type": "number",
+      "!span": "12911[444:27]-12919[444:35]"
+    },
+    "toDo": "+Function"
+  },
+  "IDBFactory": "fn()",
+  "MessagePort": "fn()",
+  "modA1Loaded": {
+    "!type": "bool",
+    "!span": "811[22:7]-822[22:18]"
+  },
+  "throwErrorInModuleB": {
+    "!type": "fn()",
+    "!span": "797[23:9]-816[23:28]"
+  },
+  "modB1Loaded": {
+    "!type": "bool",
+    "!span": "908[28:7]-919[28:18]"
+  },
+  "modA2Loaded": {
+    "!type": "bool",
+    "!span": "855[24:7]-866[24:18]"
+  },
+  "CSSStyleSheet": "fn()",
+  "StyleSheetList": "fn()",
+  "CSSStyleRule": "fn()",
+  "CSSRuleList": "fn()",
+  "table": {
+    "!span": "991[30:4]-996[30:9]",
+    "precision_": {
+      "!type": "number",
+      "!span": "1728[54:7]-1738[54:17]",
+      "!doc": "* Number of digits of precision to include in results."
+    },
+    "root_": "+Element"
+  },
+  "stubs": {
+    "!span": "1078[33:4]-1083[33:9]",
+    "original_": {
+      "!type": "[stubs.original_.<i>]",
+      "!span": "2360[73:7]-2369[73:16]",
+      "!doc": "* Stores the values changed by the set() method in chronological order."
+    }
+  },
+  "tearDown": {
+    "!type": "fn()",
+    "!span": "1133[35:9]-1141[35:17]"
+  },
+  "testSerialize": {
+    "!type": "fn()",
+    "!span": "1175[39:9]-1188[39:22]"
+  },
+  "testParse": {
+    "!type": "fn()",
+    "!span": "1452[51:9]-1461[51:18]"
+  },
+  "populateObject": {
+    "!type": "fn(obj: ?, numProperties: number, depth: number) -> !0",
+    "!span": "2106[75:9]-2120[75:23]",
+    "!doc": "* @param {!Object} obj The object to add properties to."
+  },
+  "randomLiteral": {
+    "!type": "fn()",
+    "!span": "2696[100:9]-2709[100:22]"
+  },
+  "registerPing": {
+    "!type": "fn(channel: ?)",
+    "!span": "651[20:9]-663[20:21]"
+  },
+  "startListening": {
+    "!type": "fn()",
+    "!span": "780[26:9]-794[26:23]"
+  },
+  "WebWorker": "fn()",
+  "JsonReceive": {
+    "!span": "4416[148:12]-4429[148:25]"
+  },
+  "K": "fn()",
+  "V": "fn()",
+  "VALUE": "fn()",
+  "KEY": "fn()",
+  "DEFAULT": "fn()",
+  "PAYLOAD": "fn()",
+  "CONTEXT": "fn()",
+  "initOuter": {
+    "!type": "fn()",
+    "!span": "1266[41:12]-1275[41:21]"
+  },
+  "initInner": {
+    "!type": "fn()",
+    "!span": "1452[49:12]-1461[49:21]"
+  },
+  "tigerData": {
+    "!type": "[tigerData.<i>]",
+    "!span": "758[21:4]-767[21:13]"
+  },
+  "dom": {
+    "PageVisibilityState": "fn()"
+  },
+  "MediaQueryList": "fn()",
+  "requestStats": {
+    "ServerReachability": "fn()",
+    "Stat": "fn()"
+  },
+  "BaseTestChannel": "fn()",
+  "ChannelRequest": "fn()",
+  "WebChannelBase": "fn()",
+  "WebChannelBaseTransport": {
+    "Channel": "fn()"
+  },
+  "Wire": {
+    "QueuedMap": "fn()"
+  },
+  "WebChannelDebug": "fn()",
+  "ConnectionState": "fn()",
+  "ForwardChannelRequestPool": "fn()",
+  "WireV8": "fn()",
+  "Channel": "fn()",
+  "_": {
+    "Options": "fn()",
+    "PostData": "fn()",
+    "Error": "fn()"
+  },
+  "allOf": {
+    "!type": "fn(var_args: allOf.!0) -> allOf.!ret",
+    "!span": "4166[180:9]-4171[180:14]",
+    "!doc": "* Creates a matcher that will succeed only if all of the given matchers succeed."
+  },
+  "anyOf": {
+    "!type": "fn(var_args: anyOf.!0) -> anyOf.!ret",
+    "!span": "4600[195:9]-4605[195:14]",
+    "!doc": "* Accepts a set of matchers and returns a matcher which matches values which satisfy the constraints of any of the given matchers."
+  },
+  "isNot": {
+    "!type": "fn(matcher: isNot.!0) -> isNot.!ret",
+    "!span": "5033[209:9]-5038[209:14]",
+    "!doc": "* Returns a matcher that negates the input matcher."
+  },
+  "greaterThan": {
+    "!type": "fn(value: number) -> greaterThan.!ret",
+    "!span": "6117[291:9]-6128[291:20]",
+    "!doc": "* @param {number} value The expected value."
+  },
+  "greaterThanEqualTo": {
+    "!type": "fn(value: number) -> greaterThanEqualTo.!ret",
+    "!span": "6359[302:9]-6377[302:27]",
+    "!doc": "* @param {number} value The expected value."
+  },
+  "lessThan": {
+    "!type": "fn(value: number) -> lessThan.!ret",
+    "!span": "6588[312:9]-6596[312:17]",
+    "!doc": "* @param {number} value The expected value."
+  },
+  "lessThanEqualTo": {
+    "!type": "fn(value: number) -> lessThanEqualTo.!ret",
+    "!span": "6811[322:9]-6826[322:24]",
+    "!doc": "* @param {number} value The expected value."
+  },
+  "equalTo": {
+    "!type": "fn(value: number) -> equalTo.!ret",
+    "!span": "7033[332:9]-7040[332:16]",
+    "!doc": "* @param {number} value The expected value."
+  },
+  "closeTo": {
+    "!type": "fn(value: number, range: number) -> closeTo.!ret",
+    "!span": "7319[343:9]-7326[343:16]",
+    "!doc": "* @param {number} value The expected value."
+  },
+  "hasEntries": {
+    "!type": "fn(entries: ?) -> hasEntries.!ret",
+    "!span": "5343[234:9]-5353[234:19]",
+    "!doc": "* Gives a matcher that asserts an object contains all the given key-value pairs in the input object."
+  },
+  "hasEntry": {
+    "!type": "fn(key: string, value: ?) -> hasEntry.!ret",
+    "!span": "5730[247:9]-5738[247:17]",
+    "!doc": "* Gives a matcher that asserts an object contains the given key-value pair."
+  },
+  "hasKey": {
+    "!type": "fn(key: string) -> hasKey.!ret",
+    "!span": "6037[259:9]-6043[259:15]",
+    "!doc": "* Gives a matcher that asserts an object contains the given key."
+  },
+  "hasValue": {
+    "!type": "fn(value: ?) -> hasValue.!ret",
+    "!span": "6331[271:9]-6339[271:17]",
+    "!doc": "* Gives a matcher that asserts an object contains the given value."
+  },
+  "equalsObject": {
+    "!type": "fn(object: ?) -> equalsObject.!ret",
+    "!span": "5171[259:9]-5183[259:21]",
+    "!doc": "* Returns a matcher that matches objects that are equal to the input object."
+  },
+  "hasProperty": {
+    "!type": "fn(property: string) -> hasProperty.!ret",
+    "!span": "5485[271:9]-5496[271:20]",
+    "!doc": "* Returns a matcher that matches objects that contain the input property."
+  },
+  "instanceOfClass": {
+    "!type": "fn(object: ?) -> instanceOfClass.!ret",
+    "!span": "5784[284:9]-5799[284:24]",
+    "!doc": "* Returns a matcher that matches instances of the input class."
+  },
+  "isNull": {
+    "!type": "fn() -> isNull.!ret",
+    "!span": "6006[294:9]-6012[294:15]",
+    "!doc": "* Returns a matcher that matches all null values."
+  },
+  "isNullOrUndefined": {
+    "!type": "fn() -> isNullOrUndefined.!ret",
+    "!span": "6246[305:9]-6263[305:26]",
+    "!doc": "* Returns a matcher that matches all null and undefined values."
+  },
+  "isUndefined": {
+    "!type": "fn() -> isUndefined.!ret",
+    "!span": "6476[315:9]-6487[315:20]",
+    "!doc": "* Returns a matcher that matches undefined values."
+  },
+  "anything": {
+    "!type": "fn() -> anything.!ret",
+    "!span": "1607[65:9]-1615[65:17]",
+    "!doc": "* Returns a matcher that matches anything."
+  },
+  "is": {
+    "!type": "fn(matcher: is.!0) -> !0",
+    "!span": "1878[76:9]-1880[76:11]",
+    "!doc": "* Returnes any matcher that is passed to it (aids readability)."
+  },
+  "describedAs": {
+    "!type": "fn(description: string, matcher: describedAs.!1) -> !1",
+    "!span": "2219[89:9]-2230[89:20]",
+    "!doc": "* Returns a matcher with a customized description for the given matcher."
+  },
+  "containsString": {
+    "!type": "fn(value: string) -> containsString.!ret",
+    "!span": "7141[337:9]-7155[337:23]",
+    "!doc": "* Matches a string containing the given string."
+  },
+  "endsWith": {
+    "!type": "fn(value: string) -> endsWith.!ret",
+    "!span": "7425[350:9]-7433[350:17]",
+    "!doc": "* Matches a string that ends with the given string."
+  },
+  "equalToIgnoringWhitespace": {
+    "!type": "fn(value: string) -> equalToIgnoringWhitespace.!ret",
+    "!span": "7750[363:9]-7775[363:34]",
+    "!doc": "* Matches a string that equals (ignoring whitespace) the given string."
+  },
+  "equals": {
+    "!type": "fn(value: string) -> equals.!ret",
+    "!span": "8042[375:9]-8048[375:15]",
+    "!doc": "* Matches a string that equals the given string."
+  },
+  "matchesRegex": {
+    "!type": "fn(regex: +RegExp) -> matchesRegex.!ret",
+    "!span": "8295[387:9]-8307[387:21]",
+    "!doc": "* Matches a string against a regular expression."
+  },
+  "startsWith": {
+    "!type": "fn(value: string) -> startsWith.!ret",
+    "!span": "8574[400:9]-8584[400:19]",
+    "!doc": "* Matches a string that starts with the given string."
+  },
+  "stringContainsInOrder": {
+    "!type": "fn(values: [string]) -> stringContainsInOrder.!ret",
+    "!span": "8894[413:9]-8915[413:30]",
+    "!doc": "* Matches a string that contains the given strings in order."
+  },
+  "Navigator": "fn()",
+  "setUpPage": {
+    "!type": "fn()",
+    "!span": "3818[143:12]-3829[143:23]"
+  },
+  "testGetFromLabsMap": {
+    "!type": "fn()",
+    "!span": "4404[163:12]-4424[163:32]"
+  },
+  "testGetFromOriginalMap": {
+    "!type": "fn()",
+    "!span": "4570[169:12]-4594[169:36]"
+  },
+  "testGetWithPreviousDeletionFromLabsMap": {
+    "!type": "fn()",
+    "!span": "4739[175:12]-4779[175:52]"
+  },
+  "testGetWithPreviousDeletionFromOriginalMap": {
+    "!type": "fn()",
+    "!span": "4963[182:12]-5007[182:56]"
+  },
+  "testSetFromLabsMap": {
+    "!type": "fn()",
+    "!span": "5190[189:12]-5210[189:32]"
+  },
+  "testSetFromOriginalMap": {
+    "!type": "fn()",
+    "!span": "5356[195:12]-5380[195:36]"
+  },
+  "mapPerf": {
+    "MapType": "fn()"
+  },
+  "metaKeyRecentlyReleased_": {
+    "!type": "bool",
+    "!span": "22358[637:3937]-22382[637:3961]"
+  },
+  "disableHover_": {
+    "!type": "bool",
+    "!span": "6716[218:20]-6729[218:33]"
+  },
+  "innerHTML": {
+    "!type": "string",
+    "!span": "14205[489:36]-14214[489:45]"
+  },
+  "Uint8Array": "fn()",
+  "Int8Array": "fn()",
+  "BYTES_LENGTH": {
+    "!type": "number",
+    "!span": "1028[33:4]-1040[33:16]"
+  },
+  "CHUNK_SIZE": {
+    "!type": "number",
+    "!span": "1064[34:4]-1074[34:14]"
+  },
+  "getBytes": {
+    "!type": "fn() -> [number]",
+    "!span": "1093[36:9]-1101[36:17]"
+  },
+  "copyAndSpliceByteArray": {
+    "!type": "fn(bytes: ?) -> string",
+    "!span": "1234[44:9]-1256[44:31]"
+  },
+  "sliceByteArrayConcat": {
+    "!type": "fn(bytes: ?) -> string",
+    "!span": "1655[59:9]-1675[59:29]"
+  },
+  "sliceByteArrayJoin": {
+    "!type": "fn(bytes: ?) -> string",
+    "!span": "1898[69:9]-1916[69:27]"
+  },
+  "mapByteArray": {
+    "!type": "fn(bytes: ?) -> string",
+    "!span": "2162[78:9]-2174[78:21]"
+  },
+  "forLoopByteArrayConcat": {
+    "!type": "fn(bytes: ?) -> string",
+    "!span": "2283[83:9]-2305[83:31]"
+  },
+  "forLoopByteArrayJoin": {
+    "!type": "fn(bytes: ?) -> string",
+    "!span": "2446[91:9]-2466[91:29]"
+  },
+  "run": {
+    "!type": "fn()",
+    "!span": "2623[100:9]-2626[100:12]"
+  },
+  "Int32Array": "fn()",
+  "type": {
+    "target": {
+      "!span": "8841[294:43]-8847[294:49]",
+      "stack": {
+        "!type": "string",
+        "!span": "11398[355:10]-11403[355:15]"
+      }
+    },
+    "propagationStopped_": "bool",
+    "defaultPrevented": "bool",
+    "returnValue_": "bool"
+  },
+  "R": "fn()",
+  "TARGET": "fn()",
+  "constructorStack_": "fn()",
+  "svgpan": {
+    "SvgPan": {
+      "!type": "fn(opt_graphElementId?: string, opt_root?: +Element)",
+      "!span": "3296[89:7]-3302[89:13]",
+      "!doc": "* Instantiates an SvgPan object."
+    }
+  },
+  "SVGMatrix": "fn()",
+  "SVGPoint": "fn()",
+  "ImageData": "fn()",
+  "commentStrip": {
+    "!type": "bool",
+    "!span": "47810[1351:14]-47822[1351:26]"
+  },
+  "nozip": {
+    "!type": "bool",
+    "!span": "47864[1353:14]-47869[1353:19]"
+  },
+  "Document": {
+    "<i>": {
+      "!type": "number",
+      "!span": "7484[161:2]-7514[161:32]"
+    },
+    "cookie": {
+      "!type": "string",
+      "!span": "13010[371:2168]-13016[371:2174]"
+    },
+    "isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[200:9]-6365[200:18]"
+    },
+    "disposed_": {
+      "!type": "bool",
+      "!span": "5045[175:9]-5054[175:18]"
+    },
+    "responseReady_": {
+      "!type": "bool",
+      "!span": "13692[433:13]-13706[433:27]"
+    },
+    "sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[469:11]-14808[469:31]"
+    },
+    "waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[470:11]-14839[470:22]"
+    },
+    "metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[680:13]-22382[680:37]"
+    },
+    "disableHover_": {
+      "!type": "bool",
+      "!span": "6716[212:9]-6729[212:22]"
+    },
+    "_uid": {
+      "!type": "number",
+      "!span": "49305[1401:34]-49311[1401:40]"
+    },
+    "cancelBubble": {
+      "!type": "bool",
+      "!span": "9761[334:16]-9773[334:28]"
+    },
+    "returnValue": {
+      "!type": "bool",
+      "!span": "10002[346:7]-10013[346:18]"
+    },
+    "keyCode": {
+      "!type": "number",
+      "!span": "10728[364:13]-10735[364:20]"
+    },
+    "lastWidth_": "lastWidth_",
+    "resizeDelay_": "resizeDelay_",
+    "size_": "size_"
+  },
+  "Node": {
+    "nodeValue": {
+      "!type": "string",
+      "!span": "27110[781:4725]-27119[781:4734]"
+    },
+    "id": {
+      "!type": "string",
+      "!span": "28502[837:17]-28504[837:19]"
+    },
+    "className": {
+      "!type": "string",
+      "!span": "1469[39:10]-1478[39:19]",
+      "!doc": "TODO(user): Why do we do these two lines .."
+    },
+    "onload": {
+      "!type": "fn()",
+      "!span": "11054[316:13]-11060[316:19]"
+    },
+    "innerHTML": {
+      "!type": "string",
+      "!span": "16058[556:21]-16067[560:0]"
+    },
+    "length": {
+      "!type": "number",
+      "!span": "33952[968:14]-33958[968:20]"
+    },
+    "metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[680:13]-22382[680:37]"
+    },
+    "disableHover_": {
+      "!type": "bool",
+      "!span": "6716[212:9]-6729[212:22]"
+    },
+    "_uid": {
+      "!type": "number",
+      "!span": "49305[1401:34]-49311[1401:40]"
+    },
+    "cancelBubble": {
+      "!type": "bool",
+      "!span": "9761[334:16]-9773[334:28]"
+    },
+    "returnValue": {
+      "!type": "bool",
+      "!span": "10002[346:7]-10013[346:18]"
+    },
+    "keyCode": {
+      "!type": "number",
+      "!span": "10728[364:13]-10735[364:20]"
+    },
+    "onerror": "Node.onload",
+    "onreadystatechange": "Node.onload"
+  },
+  "HTMLCollection": {
+    "<i>": {
+      "!type": "number",
+      "!span": "5415[160:58]-5416[160:59]"
+    }
+  },
+  "Event": {
+    "keyCode": {
+      "!type": "number",
+      "!span": "30669[390:19334]-30676[390:19341]"
+    },
+    "returnValue": {
+      "!type": "bool",
+      "!span": "30857[390:19522]-30868[390:19533]"
+    },
+    "cancelBubble": {
+      "!type": "bool",
+      "!span": "9761[334:16]-9773[334:28]"
+    },
+    "returnValue_": {
+      "!type": "bool",
+      "!span": "23329[583:8]-23341[583:20]"
+    }
+  },
+  "Error": {
+    "<i>": {
+      "!type": "string",
+      "!span": "10549[327:10]-10562[327:23]"
+    },
+    "message": {
+      "!type": "string",
+      "!span": "6144[209:25]-6151[209:32]"
+    },
+    "loggedJsUnitException": {
+      "!type": "bool",
+      "!span": "30789[1061:10]-30812[1061:33]"
+    },
+    "blocking_": {
+      "!type": "bool",
+      "!span": "21863[662:10]-21872[662:19]"
+    },
+    "currentTarget": "currentTarget",
+    "type": "type",
+    "R": "R",
+    "TARGET": "TARGET",
+    "defaultScope_": "?",
+    "constructorStack_": "constructorStack_",
+    "SVGMatrix": "SVGMatrix",
+    "SVGPoint": "SVGPoint",
+    "ImageData": "ImageData"
+  },
+  "Function": {
+    "listener": {
+      "!span": "7923[271:0]-7931[272:4]",
+      "handler": {
+        "!type": "+SCOPE",
+        "!span": "2263[79:7]-2270[79:14]",
+        "!doc": "Optional object whose context to execute the listener in"
+      },
+      "removed": {
+        "!type": "bool",
+        "!span": "2624[98:7]-2631[98:14]",
+        "!doc": "Whether the listener has been removed."
+      }
+    },
+    "getDescriptor": {
+      "!type": "fn()",
+      "!span": "21723[585:2193]-21736[585:2206]"
+    },
+    "matched": {
+      "!type": "bool",
+      "!span": "1664[46:1]-1671[46:8]"
+    },
+    "shouldFire_": {
+      "!type": "bool",
+      "!span": "4600[137:42]-4611[137:53]"
+    },
+    "isDone_": {
+      "!type": "bool",
+      "!span": "6977[228:3]-6984[229:6]"
+    },
+    "base": {
+      "!type": "fn(me: ?, methodName: string, var_args: ?)",
+      "!span": "52145[585:32615]-52149[585:32619]"
+    },
+    "getInstance": {
+      "!type": "fn()",
+      "!span": "18820[564:4]-18831[564:15]",
+      "!doc": "* Get the global instance @return {!goog.ds.DataManager} The data manager singleton."
+    },
+    "sentConnectionSetup_": {
+      "!type": "bool",
+      "!span": "14788[520:16]-14808[520:36]"
+    },
+    "waitForAck_": {
+      "!type": "bool",
+      "!span": "14828[521:14]-14839[521:25]"
+    },
+    "isLoaded_": {
+      "!type": "bool",
+      "!span": "6356[201:5]-6365[201:14]"
+    },
+    "position_": {
+      "!type": "number",
+      "!span": "4234[121:24]-4243[122:8]"
+    },
+    "timeoutHandle_": {
+      "!type": "number",
+      "!span": "20729[637:2308]-20743[637:2322]"
+    },
+    "metaKeyRecentlyReleased_": {
+      "!type": "bool",
+      "!span": "22358[637:3937]-22382[637:3961]"
+    },
+    "disableHover_": {
+      "!type": "bool",
+      "!span": "6716[218:20]-6729[218:33]"
+    },
+    "innerHTML": {
+      "!type": "string",
+      "!span": "14205[489:36]-14214[489:45]"
+    },
+    "commentStrip": {
+      "!type": "bool",
+      "!span": "47810[1351:14]-47822[1351:26]"
+    },
+    "nozip": {
+      "!type": "bool",
+      "!span": "47864[1353:14]-47869[1353:19]"
+    },
+    " ": "Node.onload",
+    "$pendingExpectation": "$pendingExpectation",
+    "type": "type",
+    "R": "R",
+    "TARGET": "TARGET",
+    "defaultScope_": "?",
+    "constructorStack_": "constructorStack_",
+    "svgpan": "svgpan",
+    "SVGMatrix": "SVGMatrix",
+    "SVGPoint": "SVGPoint",
+    "ImageData": "ImageData"
+  },
+  "RegExp": {
+    "lastIndex": {
+      "!type": "number",
+      "!span": "8498[267:18]-8507[267:27]"
+    }
+  },
+  "unlisten": "+Function",
+  "unlistenByKey": "+Function",
+  "listenOnce": "+Function",
+  "removeAll": "+Function",
+  "getListeners": "+Function",
+  "getListener": "+Function",
+  "hasListener": "+Function",
+  "ex": "+Error"
+}

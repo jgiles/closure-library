@@ -10,3 +10,7 @@
 
 # python
 *.pyc
+
+# tern-closure testing
+node_modules
+

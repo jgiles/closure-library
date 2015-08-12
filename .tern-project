@@ -1,0 +1,17 @@
+{
+  "libs": [
+    "browser"
+  ],
+  "plugins": {
+    "doc_comment": null,
+    "closure": {
+      "finder": {
+        "name": "grep",
+        "dirs": [
+          "closure/goog",
+          "/home/jgiles/Documents/tern-closure/testcases/"
+        ]
+      }
+    }
+  }
+}
